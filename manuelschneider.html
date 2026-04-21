@@ -65,14 +65,13 @@
     }
 
     .image-stack {
-      width: 60%;
-      max-width: 540px;
       margin-top: 0.75rem;
     }
 
     .image-stack img {
       display: block;
-      width: 100%;
+      width: 600px;
+      max-width: 100%;
       height: auto;
       margin-bottom: 1rem;
     }
@@ -81,30 +80,26 @@
       margin-bottom: 0;
     }
 
-    .error-message {
-      color: red;
-      background: #ffeeee;
-      padding: 0.5rem;
-      margin-bottom: 1rem;
-      font-size: 12px;
-    }
-
     main {
       max-width: 900px;
       margin: 0 auto;
       padding: 1rem;
     }
 
+    /* Mobile styles */
     @media (max-width: 768px) {
       .entry {
         width: 100%;
       }
-      .image-stack {
+
+      .image-stack img {
         width: 100%;
       }
+
       .image-row {
         gap: 16px;
       }
+
       main {
         padding: 1rem;
       }
@@ -137,15 +132,15 @@
     </div>
 
     <div class="image-stack">
-      <img src="Install1_DSC8310.jpg" alt="Installation view 1" onerror="this.style.display='none'; this.insertAdjacentHTML('afterend', '<div class=\'error-message\'>Missing: Install1_DSC8310.jpg</div>')">
-      <img src="Install2_DSC8331.jpg" alt="Installation view 2" onerror="this.style.display='none'; this.insertAdjacentHTML('afterend', '<div class=\'error-message\'>Missing: Install2_DSC8331.jpg</div>')">
-      <img src="Install3_DSC8341.jpg" alt="Installation view 3" onerror="this.style.display='none'; this.insertAdjacentHTML('afterend', '<div class=\'error-message\'>Missing: Install3_DSC8341.jpg</div>')">
-      <img src="S_DSC8315.jpg" alt="S view" onerror="this.style.display='none'; this.insertAdjacentHTML('afterend', '<div class=\'error-message\'>Missing: S_DSC8315.jpg</div>')">
-      <img src="S_DSC8318.jpg" alt="S view 2" onerror="this.style.display='none'; this.insertAdjacentHTML('afterend', '<div class=\'error-message\'>Missing: S_DSC8318.jpg</div>')">
-      <img src="P1_DSC8373.jpg" alt="Painting 1" onerror="this.style.display='none'; this.insertAdjacentHTML('afterend', '<div class=\'error-message\'>Missing: P1_DSC8373.jpg</div>')">
-      <img src="P2_DSC8368.jpg" alt="Painting 2" onerror="this.style.display='none'; this.insertAdjacentHTML('afterend', '<div class=\'error-message\'>Missing: P2_DSC8368.jpg</div>')">
-      <img src="P3_DSC8364.jpg" alt="Painting 3" onerror="this.style.display='none'; this.insertAdjacentHTML('afterend', '<div class=\'error-message\'>Missing: P3_DSC8364.jpg</div>')">
-      <img src="P4_DSC8355.jpg" alt="Painting 4" onerror="this.style.display='none'; this.insertAdjacentHTML('afterend', '<div class=\'error-message\'>Missing: P4_DSC8355.jpg</div>')">
+      <img src="Install1_DSC8310.jpg" alt="Installation view 1">
+      <img src="Install2_DSC8331.jpg" alt="Installation view 2">
+      <img src="Install3_DSC8341.jpg" alt="Installation view 3">
+      <img src="S_DSC8315.jpg" alt="S view">
+      <img src="S_DSC8318.jpg" alt="S view 2">
+      <img src="P1_DSC8373.jpg" alt="Painting 1">
+      <img src="P2_DSC8368.jpg" alt="Painting 2">
+      <img src="P3_DSC8364.jpg" alt="Painting 3">
+      <img src="P4_DSC8355.jpg" alt="Painting 4">
     </div>
 
   </main>
