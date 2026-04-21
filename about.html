@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HJITP – About</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .image-row {
+      display: flex;
+      align-items: flex-end;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .image-row img {
+      display: block;
+      width: 300px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .image-row a {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      color: black;
+      padding-bottom: 2px;
+    }
+
+    .image-row a:hover {
+      color: #0000EE;
+    }
+
+    #home-link img {
+      transition: filter 0.2s;
+    }
+
+    #home-link img:hover {
+      filter: sepia(0.3) saturate(2) hue-rotate(190deg);
+    }
+
+    .entry {
+      padding: 0.75rem 0;
+      line-height: 1.3;
+      width: 60%;
+      max-width: 540px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    /* Mobile styles */
+    @media (max-width: 768px) {
+      .entry {
+        width: 100%;
+      }
+
+      .image-row {
+        gap: 16px;
+      }
+
+      main {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="image-row">
+    <a href="index.html" id="home-link">
+      <img src="Header300pxbroad.jpg" alt="Exhibition image">
+    </a>
+  </div>
+
+  <main>
+    <div class="entry">
+      Hjitp.ch is an online archive for activities that take place under this name.
+    </div>
+  </main>
+
+</body>
+</html>

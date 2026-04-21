@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manuel Schneider – ÄNGSTLI</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .image-row {
+      display: flex;
+      align-items: flex-end;
+      gap: 12px;
+    }
+
+    .image-row img {
+      display: block;
+      width: 300px;
+    }
+
+    .image-row a {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      color: black;
+      padding-bottom: 2px;
+    }
+
+    .image-row a:hover {
+      color: #0000EE;
+    }
+
+    #home-link img {
+      transition: filter 0.2s;
+    }
+
+    #home-link img:hover {
+      filter: sepia(0.3) saturate(2) hue-rotate(190deg);
+    }
+
+    .entry {
+      padding: 0.75rem 0;
+      line-height: 1.3;
+    }
+
+    main .entry {
+      width: 60%;
+      max-width: 540px;
+    }
+
+    .entry-link {
+      color: black;
+    }
+
+    .entry-link:hover {
+      color: #0000EE;
+    }
+
+    .image-stack {
+      margin-top: 0.75rem;
+      margin-left: -1rem;
+    }
+
+    .image-stack img {
+      display: block;
+      width: 100%;
+      max-width: 1080px;
+      margin-bottom: 1rem;
+    }
+
+    .image-stack img:last-child {
+      margin-bottom: 0;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      main .entry {
+        width: 100%;
+      }
+      .image-stack img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="image-row">
+    <a href="index.html" id="home-link">
+      <img src="Header300pxbroad.jpg" alt="Exhibition image">
+    </a>
+    <a href="about.html">About</a>
+  </div>
+
+  <main>
+
+    <div class="entry">
+      Manuel Schneider<br>
+      ÄNGSTLI<br>
+      18.4.2026<br>
+      Auf dem Wolf 11
+    </div>
+
+    <div class="entry">
+      ÄNGSTLI is an exhibition of new paintings by Manuel Schneider. The exhibition is situated in an emptied out studio and will only be open to the public for one Saturday evening. The german Angst translates to fear in english. The suffix -li is common in swiss german dialect to render any noun to its diminuitive, its belittlement.
+    </div>
+
+    <a href="textmanuelschneider.pdf" class="entry entry-link">Exhibition text</a>
+
+    <div class="image-stack">
+      <img src="Install1_DSC8310.jpg" alt="Installation view 1">
+      <img src="Install2_DSC8331.jpg" alt="Installation view 2">
+      <img src="Install3_DSC8341.jpg" alt="Installation view 3">
+      <img src="S_DSC8315.jpg" alt="S view">
+      <img src="S_DSC8318.jpg" alt="S view 2">
+      <img src="P1_DSC8373.jpg" alt="Painting 1">
+      <img src="P2_DSC8368.jpg" alt="Painting 2">
+      <img src="P3_DSC8364.jpg" alt="Painting 3">
+      <img src="P4_DSC8355.jpg" alt="Painting 4">
+    </div>
+
+  </main>
+
+</body>
+</html>
