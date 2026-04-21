@@ -12,42 +12,37 @@
       font-size: 13px;
     }
 
-    .header {
-      position: relative;
+    .image-row {
+      display: flex;
+      align-items: flex-end;
+      gap: 12px;
     }
 
-    .header img {
-      width: 100%;
+    .image-row img {
       display: block;
+      width: 600px;
     }
 
-    .header a {
-      position: absolute;
-      top: 12px;
-      right: 12px;
+    .image-row a {
       font-family: Arial, sans-serif;
       font-size: 13px;
       color: black;
       text-decoration: none;
+      padding-bottom: 2px;
     }
 
-    .header a:hover {
+    .image-row a:hover {
       text-decoration: underline;
     }
 
     .entry {
       padding: 0.75rem 0;
-      border-top: 1px solid #ccc;
       cursor: pointer;
       line-height: 1.7;
     }
 
     .entry:hover {
       background-color: #f5f5f5;
-    }
-
-    .entry:last-child {
-      border-bottom: 1px solid #ccc;
     }
 
     main {
@@ -59,8 +54,8 @@
 </head>
 <body>
 
-  <div class="header">
-<img src="Header300pxbroad.jpg" alt="Exhibition image">
+  <div class="image-row">
+    <img src="Header600pxbroad.jpg" alt="Exhibition image">
     <a href="/about">About</a>
   </div>
 
