@@ -21,6 +21,7 @@
       align-items: flex-end;
       gap: 12px;
       flex-wrap: wrap;
+      padding-left: 1rem;
     }
 
     .image-row img {
@@ -54,6 +55,7 @@
       line-height: 1.7;
       width: 60%;
       max-width: 540px;
+      padding-left: 1rem;
     }
 
     .entry-link {
@@ -66,6 +68,7 @@
 
     .image-stack {
       margin-top: 0.75rem;
+      padding-left: 1rem;
     }
 
     .image-stack img {
@@ -81,15 +84,22 @@
     }
 
     main {
-      max-width: 900px;
+      max-width: 1200px;
       margin: 0 auto;
-      padding: 1rem;
+      padding: 0;
     }
 
     /* Mobile styles */
     @media (max-width: 768px) {
       .entry {
         width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      .image-stack {
+        padding-left: 0;
+        padding-right: 0;
       }
 
       .image-stack img {
@@ -99,10 +109,11 @@
 
       .image-row {
         gap: 16px;
+        padding-left: 1rem;
       }
 
       main {
-        padding: 1rem;
+        padding: 0;
       }
     }
   </style>
