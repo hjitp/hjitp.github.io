@@ -20,15 +20,11 @@
       display: flex;
       align-items: flex-end;
       gap: 12px;
-      flex-wrap: wrap;
-      padding-left: 1rem;
     }
 
     .image-row img {
       display: block;
       width: 300px;
-      max-width: 100%;
-      height: auto;
     }
 
     .image-row a {
@@ -53,9 +49,12 @@
     .entry {
       padding: 0.75rem 0;
       line-height: 1.7;
+    }
+
+    /* This is the key fix: Text uses the SAME styling as index page */
+    main .entry {
       width: 60%;
       max-width: 540px;
-      /* No padding-left here - text stays centered/indented naturally */
     }
 
     .entry-link {
@@ -66,16 +65,15 @@
       color: #0000EE;
     }
 
+    /* Image styling - completely independent from text */
     .image-stack {
       margin-top: 0.75rem;
-      padding-left: 1rem;  /* Same as header image */
     }
 
     .image-stack img {
       display: block;
       width: 100%;
       max-width: 1080px;
-      height: auto;
       margin-bottom: 1rem;
     }
 
@@ -84,36 +82,18 @@
     }
 
     main {
-      max-width: 1200px;
+      max-width: 900px;
       margin: 0 auto;
-      padding: 0;
+      padding: 1rem;
     }
 
-    /* Mobile styles */
+    /* Mobile */
     @media (max-width: 768px) {
-      .entry {
+      main .entry {
         width: 100%;
-        padding-left: 1rem;
-        padding-right: 1rem;
       }
-
-      .image-stack {
-        padding-left: 0;
-        padding-right: 0;
-      }
-
       .image-stack img {
         width: 100%;
-        max-width: 100%;
-      }
-
-      .image-row {
-        gap: 16px;
-        padding-left: 1rem;
-      }
-
-      main {
-        padding: 0;
       }
     }
   </style>
@@ -129,6 +109,7 @@
 
   <main>
 
+    <!-- Text block: IDENTICAL positioning to index page -->
     <div class="entry">
       Manuel Schneider<br>
       ÄNGSTLI<br>
@@ -144,6 +125,7 @@
       Exhibition text
     </div>
 
+    <!-- Image block: Follows the natural document flow, no weird padding -->
     <div class="image-stack">
       <img src="Install1_DSC8310.jpg" alt="Installation view 1">
       <img src="Install2_DSC8331.jpg" alt="Installation view 2">
