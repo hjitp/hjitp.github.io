@@ -20,11 +20,14 @@
       display: flex;
       align-items: flex-end;
       gap: 12px;
+      flex-wrap: wrap;
     }
 
     .image-row img {
       display: block;
       width: 300px;
+      max-width: 100%;
+      height: auto;
     }
 
     .image-row a {
@@ -50,6 +53,8 @@
       padding: 0.75rem 0;
       cursor: pointer;
       line-height: 1.7;
+      width: 60%;
+      max-width: 540px;
     }
 
     .entry:hover {
@@ -60,6 +65,21 @@
       max-width: 900px;
       margin: 0 auto;
       padding: 1rem;
+    }
+
+    /* Mobile styles */
+    @media (max-width: 768px) {
+      .entry {
+        width: 100%;
+      }
+
+      .image-row {
+        gap: 16px;
+      }
+
+      main {
+        padding: 1rem;
+      }
     }
   </style>
 </head>
