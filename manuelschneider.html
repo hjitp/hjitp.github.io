@@ -20,11 +20,14 @@
       display: flex;
       align-items: flex-end;
       gap: 12px;
+      flex-wrap: wrap;
     }
 
     .image-row img {
       display: block;
       width: 300px;
+      max-width: 100%;
+      height: auto;
     }
 
     .image-row a {
@@ -49,6 +52,8 @@
     .entry {
       padding: 0.75rem 0;
       line-height: 1.7;
+      width: 60%;
+      max-width: 540px;
     }
 
     .entry-link {
@@ -59,10 +64,46 @@
       color: #0000EE;
     }
 
+    .image-stack {
+      width: 60%;
+      max-width: 540px;
+      margin-top: 0.75rem;
+    }
+
+    .image-stack img {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+
+    .image-stack img:last-child {
+      margin-bottom: 0;
+    }
+
     main {
       max-width: 900px;
       margin: 0 auto;
       padding: 1rem;
+    }
+
+    /* Mobile styles */
+    @media (max-width: 768px) {
+      .entry {
+        width: 100%;
+      }
+
+      .image-stack {
+        width: 100%;
+      }
+
+      .image-row {
+        gap: 16px;
+      }
+
+      main {
+        padding: 1rem;
+      }
     }
   </style>
 </head>
@@ -89,6 +130,18 @@
 
     <div class="entry entry-link" onclick="window.location.href='textmanuelschneider.pdf'">
       Exhibition text
+    </div>
+
+    <div class="image-stack">
+      <img src="Install1_DSC8310.jpg" alt="Installation view 1">
+      <img src="Install2_DSC8331.jpg" alt="Installation view 2">
+      <img src="Install3_DSC8341.jpg" alt="Installation view 3">
+      <img src="S_DSC8315.jpg" alt="S view">
+      <img src="S_DSC8318.jpg" alt="S view 2">
+      <img src="P1_DSC8373.jpg" alt="Painting 1">
+      <img src="P2_DSC8368.jpg" alt="Painting 2">
+      <img src="P3_DSC8364.jpg" alt="Painting 3">
+      <img src="P4_DSC8355.jpg" alt="Painting 4">
     </div>
 
   </main>
