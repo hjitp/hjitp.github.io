@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About – hjitp.ch</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+    }
+
+    /* Static vertical sidebar */
+    #sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100vh;
+      background: #fff;
+      z-index: 100;
+    }
+
+    #sidebar .header-image {
+      display: block;
+      width: 200px;
+    }
+
+    #sidebar .header-image img {
+      width: 200px;
+      display: block;
+    }
+
+    /* Nav links — indented 20px further than header image */
+    #sidebar nav {
+      padding-left: 20px;
+    }
+
+    #sidebar nav a,
+    #sidebar nav .empty-line {
+      display: block;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 13px;
+      font-style: italic;
+      line-height: 1.5;
+      color: #000;
+      text-decoration: none;
+    }
+
+    #sidebar nav a:hover {
+      color: #0000EE;
+    }
+
+    /* Main content area */
+    #content {
+      margin-left: 200px;
+      padding-left: 20px;
+      padding-top: 0;
+    }
+
+    /* Type Style 2: Arial, 13px, regular, line-height 1.2 */
+    .type2 {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1.2;
+      color: #000;
+    }
+
+    .block {
+      margin-bottom: 1.2em;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="sidebar">
+    <a class="header-image" href="/">
+      <img src="Header200pxbroad.jpg" alt="hjitp.ch">
+    </a>
+    <nav>
+      <a href="aengstli.html">ÄNGSTLI</a>
+      <span class="empty-line">&nbsp;</span>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+
+  <div id="content">
+
+    <!-- 1st Type-2-Paragraph -->
+    <div class="block type2">
+      Hjitp.ch is an online archive for activities that take place under this name.
+    </div>
+
+  </div>
+
+</body>
+</html>
