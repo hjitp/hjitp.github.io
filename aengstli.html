@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ÄNGSTLI – hjitp.ch</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+    }
+
+    /* Static vertical sidebar */
+    #sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100vh;
+      background: #fff;
+      z-index: 100;
+    }
+
+    #sidebar .header-image {
+      display: block;
+      width: 200px;
+    }
+
+    #sidebar .header-image img {
+      width: 200px;
+      display: block;
+    }
+
+    /* Nav links — indented 20px further than header image */
+    #sidebar nav {
+      padding-left: 20px;
+    }
+
+    #sidebar nav a,
+    #sidebar nav .empty-line {
+      display: block;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      font-style: italic;
+      line-height: 1.5;
+      color: #000;
+      text-decoration: none;
+    }
+
+    #sidebar nav a:hover {
+      color: #0000EE;
+    }
+
+    /* Main content area */
+    #content {
+      margin-left: 200px;
+      padding-left: 20px;
+      padding-top: 20px;
+    }
+
+    /* Type Style 2: Arial, 13px, regular, line-height 1.1 */
+    .type2 {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1.1;
+      color: #000;
+      max-width: 400px;
+    }
+
+    /* Spacing between paragraphs and images matches paragraph spacing */
+    .block {
+      margin-bottom: 1.1em;
+    }
+
+    .block a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    .block a:hover {
+      color: #0000EE;
+    }
+
+    /* Images at their natural width */
+    .block img {
+      display: block;
+      width: 800px;
+      max-width: 100%;
+    }
+
+    /* Mobile: hide sidebar nav, show header image above content */
+    @media (max-width: 600px) {
+      #sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+
+      #sidebar .header-image img {
+        width: 200px;
+      }
+
+      #sidebar nav {
+        display: none;
+      }
+
+      #content {
+        margin-left: 0;
+        padding-left: 0;
+        padding-top: 20px;
+      }
+
+      .type2 {
+        max-width: 100%;
+        padding: 0 20px;
+      }
+
+      .block img {
+        width: 100vw;
+        max-width: 100vw;
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="sidebar">
+    <a class="header-image" href="/">
+      <img src="Header200pxbroad.jpg" alt="hjitp.ch">
+    </a>
+    <nav>
+      <a href="aengstli.html">ÄNGSTLI</a>
+      <span class="empty-line">&nbsp;</span>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+
+  <div id="content">
+
+    <!-- 1st Type-2-Paragraph -->
+    <div class="block type2">
+      Manuel Schneider<br>
+      ÄNGSTLI<br>
+      18.4.2026 18:00-22:00<br>
+      Auf dem Wolf 11
+    </div>
+
+    <!-- 2nd Type-2-Paragraph -->
+    <div class="block type2">
+      ÄNGSTLI is an exhibition of new paintings by Manuel Schneider. The exhibition is situated in an emptied out studio and will only be open to the public for one Saturday evening. The german Angst translates to fear in english. The suffix -li is common in swiss german dialect to render any noun to its diminuitive, its belittlement.
+    </div>
+
+    <!-- 3rd Type-2-Paragraph — linked to PDF -->
+    <div class="block type2">
+      <a href="exhibitiontextaengstli.pdf">Exhibition text</a>
+    </div>
+
+    <!-- Images — same spacing as between paragraphs -->
+    <div class="block">
+      <img src="Install1_DSC8310s.jpg" alt="Installation view 1">
+    </div>
+    <div class="block">
+      <img src="Install2_DSC8331s.jpg" alt="Installation view 2">
+    </div>
+    <div class="block">
+      <img src="Install3_DSC8341s.jpg" alt="Installation view 3">
+    </div>
+    <div class="block">
+      <img src="S_DSC8315s.jpg" alt="Detail view 1">
+    </div>
+    <div class="block">
+      <img src="S_DSC8318s.jpg" alt="Detail view 2">
+    </div>
+    <div class="block">
+      <img src="P1_DSC8373s.jpg" alt="Painting 1">
+    </div>
+    <div class="block">
+      <img src="P2_DSC8368s.jpg" alt="Painting 2">
+    </div>
+    <div class="block">
+      <img src="P3_DSC8364s.jpg" alt="Painting 3">
+    </div>
+    <div class="block">
+      <img src="P4_DSC8355s.jpg" alt="Painting 4">
+    </div>
+
+  </div>
+
+</body>
+</html>
