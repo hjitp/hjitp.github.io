@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filter – hjitp.ch</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+    }
+
+    /* Static vertical sidebar */
+    #sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100vh;
+      background: #fff;
+      z-index: 100;
+    }
+
+    #sidebar .header-image {
+      display: block;
+      width: 200px;
+    }
+
+    #sidebar .header-image img {
+      width: 200px;
+      display: block;
+    }
+
+    /* Nav links — indented 20px further than header image */
+    #sidebar nav {
+      padding-left: 20px;
+    }
+
+    #sidebar nav a,
+    #sidebar nav .empty-line {
+      display: block;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      font-style: italic;
+      line-height: 1.5;
+      color: #000;
+      text-decoration: none;
+    }
+
+    #sidebar nav a:hover {
+      color: #0000EE;
+      text-decoration: underline;
+    }
+
+    /* Main content area */
+    #content {
+      margin-left: 200px;
+      padding-left: 20px;
+      padding-top: 20px;
+    }
+
+    /* Type Style 2: Arial, 13px, regular, line-height 1.1 */
+    .type2 {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1.1;
+      color: #000;
+      max-width: 400px;
+    }
+
+    /* Spacing between paragraphs and images matches paragraph spacing */
+    .block {
+      margin-bottom: 1.1em;
+    }
+
+    /* Chapter links: always blue + underline */
+    .block a {
+      color: #0000EE;
+      text-decoration: underline;
+    }
+
+    .block a:hover {
+      color: #0000EE;
+      text-decoration: underline;
+    }
+
+    /* Images at their natural width */
+    .block img {
+      display: block;
+      width: 800px;
+      max-width: 100%;
+    }
+
+    /* Mobile: hide sidebar nav, show header image above content */
+    @media (max-width: 600px) {
+      #sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+
+      #sidebar .header-image img {
+        width: 200px;
+      }
+
+      #sidebar nav {
+        display: none;
+      }
+
+      #content {
+        margin-left: 0;
+        padding-left: 0;
+        padding-top: 20px;
+      }
+
+      .type2 {
+        max-width: 100%;
+        padding: 0 20px;
+      }
+
+      .block img {
+        width: 100vw;
+        max-width: 100vw;
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="sidebar">
+    <a class="header-image" href="/">
+      <img src="Header200pxbroad.jpg" alt="hjitp.ch">
+    </a>
+    <nav>
+      <a href="filter.html">Filter</a>
+      <a href="aengstli.html">ÄNGSTLI</a>
+      <span class="empty-line">&nbsp;</span>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+
+  <div id="content">
+
+    <!-- 1st Type-2-Paragraph -->
+    <div class="block type2">
+      Rafael Jörger<br>
+      <i>Filter</i><br>
+      Opening 23.5.2026 18 - 22<br>
+      Auf dem Wolf 11, Basel
+    </div>
+
+    <!-- 2nd Type-2-Paragraph -->
+    <div class="block type2">
+      Open from 24.5.2026 through 6.6.2026. Please contact us via email to make an appointment.<br>
+      <a href="mailto:hjitp@hjitp.ch">hjitp@hjitp.ch</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
