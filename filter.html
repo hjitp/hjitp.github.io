@@ -99,6 +99,15 @@
       max-width: 100%;
     }
 
+    /* Videos: simple interface, max width 800px */
+    .block video {
+      display: block;
+      width: 800px;
+      max-width: 100%;
+      height: auto;
+      background: #000;
+    }
+
     /* Mobile: hide sidebar nav, show header image above content */
     @media (max-width: 600px) {
       #sidebar {
@@ -130,6 +139,11 @@
         width: 100vw;
         max-width: 100vw;
         margin-left: 0;
+      }
+
+      .block video {
+        width: 100vw;
+        max-width: 100vw;
       }
     }
   </style>
@@ -164,13 +178,20 @@
       To make an appointment please contact us via <a href="mailto:hjitp@hjitp.ch">email</a>.
     </div>
 
-    <!-- 3rd Type-2-Paragraph — PDF links -->
+    <!-- 3rd Type-2-Paragraph — PDF links (added Exhibition Flyer) -->
     <div class="block type2">
       <a href="exhibitiontextfilter.pdf">Exhibition text</a><br>
-      <a href="infosheetfilter.pdf">Info sheet</a>
+      <a href="infosheetfilter.pdf">Info sheet</a><br>
+      <a href="xxx.pdf">Exhibition Flyer</a>
     </div>
 
-    <!-- Images — max 800px -->
+    <!-- 4th Type-2-Paragraph — Photos & Videos credit line -->
+    <div class="block type2">
+      Photos by Rafael Jörger<br>
+      Videos by Hjitp
+    </div>
+
+    <!-- Images — max 800px (exact order from prompt) -->
     <div class="block">
       <img src="2.jpg" alt="Filter 02" style="width: 800px; max-width: 100%;">
     </div>
@@ -220,14 +241,16 @@
       <img src="21.jpg" alt="Filter 21" style="width: 800px; max-width: 100%;">
     </div>
 
-    <!-- Photos credit -->
-    <div class="block type2">
-      Photos by Rafael Jörger
-    </div>
-
-    <!-- Flyer image -->
+    <!-- Videos (simple interface, play upon clicking preview / standard controls) -->
     <div class="block">
-      <img src="Flyer_RJ_Filter_Hjitp_Detail400.jpg" alt="Filter flyer detail" style="width: 400px; max-width: 100%;">
+      <video controls preload="metadata">
+        <source src="rjfilter630amsmall2.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="block">
+      <video controls preload="metadata">
+        <source src="rjfilter830pmsmall.mp4" type="video/mp4">
+      </video>
     </div>
 
   </div>
