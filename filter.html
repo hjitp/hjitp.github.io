@@ -1,44 +1,51 @@
-height: auto;
-}
+<!-- KAPITEL /filter – bitte 1:1 in deine bestehende Seite einfügen (ersetzt das alte /filter-Kapitel) -->
+<div id="chapter-filter" class="chapter" data-chapter="filter">
+    <div class="type2-paragraph">
+        Rafael Jörger<br>
+        <i>Filter</i><br>
+        23.5. - 6.6.2026<br>
+        Opening 23.5.2026 18 - 22<br>
+        Auf dem Wolf 11, Basel
+    </div>
+    <div class="type2-paragraph">
+        To make an appointment please contact us via <a href="mailto:hjitp@hjitp.ch">email</a>.
+    </div>
+    <div class="type2-paragraph">
+        <a href="exhibitiontextfilter.pdf" download>Exhibition text</a><br>
+        <a href="infosheetfilter.pdf" download>Info sheet</a><br>
+        <a href="xxx.pdf" download>Exhibition Flyer</a>
+    </div>
+    <div class="type2-paragraph">
+        Photos by Rafael Jörger
+    </div>
 
-    /* Videos: autoplay, loop, no audio, minimal interface, greyscale */
-    /* Videos: autoplay, loop, no audio, no interface at all */
-.block video {
-display: block;
-width: 800px;
-max-width: 100%;
-height: auto;
-background: #000;
-      filter: grayscale(100%);
-      object-fit: cover;
-}
+    <!-- Bilder: maximale Breite 800px (wenn Bild größer), ansonsten Originalgröße -->
+    <img src="2.jpg" class="chapter-image" style="max-width: 800px; width: auto; height: auto; display: block; margin-bottom: 1.1em;" onerror="this.style.display='none'">
+    <img src="3.jpg" class="chapter-image" style="max-width: 800px; width: auto; height: auto; display: block; margin-bottom: 1.1em;" onerror="this.style.display='none'">
+    <img src="5.jpg" class="chapter-image" style="max-width: 800px; width: auto; height: auto; display: block; margin-bottom: 1.1em;" onerror="this.style.display='none'">
+    <img src="7.jpg" class="chapter-image" style="max-width: 800px; width: auto; height: auto; display: block; margin-bottom: 1.1em;" onerror="this.style.display='none'">
+    <img src="8.jpg" class="chapter-image" style="max-width: 800px; width: auto; height: auto; display: block; margin-bottom: 1.1em;" onerror="this.style.display='none'">
+    <img src="9.jpg" class="chapter-image" style="max-width: 800px; width: auto; height: auto; display: block; margin-bottom: 1.1em;" onerror="this.style.display='none'">
+    <img src="10.jpg" class="chapter-image" style="max-width: 800px; width: auto; height: auto; display: block; margin-bottom: 1.1em;" onerror="this.style.display='none'">
+    <img src="11.jpg" class="chapter-image" style="max-width: 800px; width: auto; height: auto; display: block; margin-bottom: 1.1em;" onerror="this.style.display='none'">
+    <img src="12.jpg" class="chapter-image" style="max-width: 800px; width: auto; height: auto; display: block; margin-bottom: 1.1em;" onerror="this.style.display='none'">
+    <img src="13.jpg" class="chapter-image" style="max-width: 800px; width: auto; height: auto; display: block; margin-bottom: 1.1em;" onerror="this.style.display='none'">
+    <img src="14.jpg" class="chapter-image" style="max-width: 800px; width: auto; height: auto; display: block; margin-bottom: 1.1em;" onerror="this.style.display='none'">
+    <img src="15.jpg" class="chapter-image" style="max-width: 800px; width: auto; height: auto; display: block; margin-bottom: 1.1em;" onerror="this.style.display='none'">
+    <img src="16.jpg" class="chapter-image" style="max-width: 800px; width: auto; height: auto; display: block; margin-bottom: 1.1em;" onerror="this.style.display='none'">
+    <img src="17.jpg" class="chapter-image" style="max-width: 800px; width: auto; height: auto; display: block; margin-bottom: 1.1em;" onerror="this.style.display='none'">
+    <img src="20.jpg" class="chapter-image" style="max-width: 800px; width: auto; height: auto; display: block; margin-bottom: 1.1em;" onerror="this.style.display='none'">
+    <img src="21.jpg" class="chapter-image" style="max-width: 800px; width: auto; height: auto; display: block; margin-bottom: 1.1em;" onerror="this.style.display='none'">
 
-    /* Hide all video controls by default (no interface) */
-    /* Completely hide all video controls / UI */
-video::-webkit-media-controls {
-display: none !important;
-}
-video::-webkit-media-controls-enclosure {
-display: none !important;
-}
-    video::-webkit-media-controls-panel {
-      display: none !important;
-    }
-    video::-webkit-media-controls-overlay-play-button {
-      display: none !important;
-    }
-video {
-      pointer-events: none; /* makes it impossible to interact -> no interface */
-      pointer-events: none;
-}
+    <div class="type2-paragraph">
+        Videos by Hjitp, Dollies shot at 6:30 and 20:30
+    </div>
 
-/* Mobile: hide sidebar nav, show header image above content */
-@@ -229,7 +233,7 @@
-Wiggle and Panning shot at 20:30
+    <!-- Videos: 720p HD, automatisch abspielen, loop, stumm, kein Interface, gleiche Breite wie Fotos -->
+    <video style="max-width: 800px; width: 100%; height: auto; display: block; margin-bottom: 1.1em;" autoplay loop muted playsinline disableRemotePlayback controlslist="nodownload nofullscreen noremoteplayback">
+        <source src="rjfilter630amsmall2.mp4" type="video/mp4">
+    </video>
+    <video style="max-width: 800px; width: 100%; height: auto; display: block; margin-bottom: 1.1em;" autoplay loop muted playsinline disableRemotePlayback controlslist="nodownload nofullscreen noremoteplayback">
+        <source src="rjfilter830pm2small.mp4" type="video/mp4">
+    </video>
 </div>
-
-    <!-- Videos (autoplay, loop, no audio, no interface, greyscale) -->
-    <!-- Videos (autoplay, loop, no audio, no interface whatsoever, original colors) -->
-<div class="block">
-<video autoplay loop muted playsinline disableRemotePlayback>
-<source src="rjfilter630amsmall2.mp4" type="video/mp4">
