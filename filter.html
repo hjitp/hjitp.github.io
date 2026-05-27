@@ -1,47 +1,44 @@
-<!-- KAPITEL /FILTER – bitte komplett gegen dein altes /filter-Kapitel austauschen -->
-<div id="chapter-filter" class="chapter" data-chapter="filter">
-    <div class="type2-paragraph">
-        Rafael Jörger<br>
-        <i>Filter</i><br>
-        23.5. - 6.6.2026<br>
-        Opening 23.5.2026 18 - 22<br>
-        Auf dem Wolf 11, Basel
-    </div>
-    <div class="type2-paragraph">
-        To make an appointment please contact us via <a href="mailto:hjitp@hjitp.ch">email</a>.
-    </div>
-    <div class="type2-paragraph">
-        <a href="exhibitiontextfilter.pdf" download>Exhibition text</a><br>
-        <a href="infosheetfilter.pdf" download>Info sheet</a><br>
-        <a href="xxx.pdf" download>Exhibition Flyer</a>
-    </div>
-    <div class="type2-paragraph">
-        Photos by Rafael Jörger
-    </div>
+height: auto;
+}
 
-    <!-- BILDER (maximale Breite 800px, Reihenfolge wie angegeben) -->
-    <img src="2.jpg" class="chapter-image" alt="2" onerror="this.style.display='none'">
-    <img src="3.jpg" class="chapter-image" alt="3" onerror="this.style.display='none'">
-    <img src="5.jpg" class="chapter-image" alt="5" onerror="this.style.display='none'">
-    <img src="7.jpg" class="chapter-image" alt="7" onerror="this.style.display='none'">
-    <img src="8.jpg" class="chapter-image" alt="8" onerror="this.style.display='none'">
-    <img src="9.jpg" class="chapter-image" alt="9" onerror="this.style.display='none'">
-    <img src="10.jpg" class="chapter-image" alt="10" onerror="this.style.display='none'">
-    <img src="11.jpg" class="chapter-image" alt="11" onerror="this.style.display='none'">
-    <img src="12.jpg" class="chapter-image" alt="12" onerror="this.style.display='none'">
-    <img src="13.jpg" class="chapter-image" alt="13" onerror="this.style.display='none'">
-    <img src="14.jpg" class="chapter-image" alt="14" onerror="this.style.display='none'">
-    <img src="15.jpg" class="chapter-image" alt="15" onerror="this.style.display='none'">
-    <img src="16.jpg" class="chapter-image" alt="16" onerror="this.style.display='none'">
-    <img src="17.jpg" class="chapter-image" alt="17" onerror="this.style.display='none'">
-    <img src="20.jpg" class="chapter-image" alt="20" onerror="this.style.display='none'">
-    <img src="21.jpg" class="chapter-image" alt="21" onerror="this.style.display='none'">
+    /* Videos: autoplay, loop, no audio, minimal interface, greyscale */
+    /* Videos: autoplay, loop, no audio, no interface at all */
+.block video {
+display: block;
+width: 800px;
+max-width: 100%;
+height: auto;
+background: #000;
+      filter: grayscale(100%);
+      object-fit: cover;
+}
 
-    <div class="type2-paragraph">
-        Videos by Hjitp, Dollies shot at 6:30 and 20:30
-    </div>
+    /* Hide all video controls by default (no interface) */
+    /* Completely hide all video controls / UI */
+video::-webkit-media-controls {
+display: none !important;
+}
+video::-webkit-media-controls-enclosure {
+display: none !important;
+}
+    video::-webkit-media-controls-panel {
+      display: none !important;
+    }
+    video::-webkit-media-controls-overlay-play-button {
+      display: none !important;
+    }
+video {
+      pointer-events: none; /* makes it impossible to interact -> no interface */
+      pointer-events: none;
+}
 
-    <!-- VIDEOS: automatische Wiedergabe, Loop, stumm, keine Bedienelemente -->
-    <video class="video-loop" src="rjfilter630amsmall2.mp4" autoplay loop muted playsinline disableRemotePlayback></video>
-    <video class="video-loop" src="rjfilter830pm2small.mp4" autoplay loop muted playsinline disableRemotePlayback></video>
+/* Mobile: hide sidebar nav, show header image above content */
+@@ -229,7 +233,7 @@
+Wiggle and Panning shot at 20:30
 </div>
+
+    <!-- Videos (autoplay, loop, no audio, no interface, greyscale) -->
+    <!-- Videos (autoplay, loop, no audio, no interface whatsoever, original colors) -->
+<div class="block">
+<video autoplay loop muted playsinline disableRemotePlayback>
+<source src="rjfilter630amsmall2.mp4" type="video/mp4">
