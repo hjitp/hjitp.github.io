@@ -100,26 +100,30 @@
       height: auto;
     }
 
-    /* Videos: autoplay, loop, no audio, minimal interface, greyscale */
+    /* Videos: autoplay, loop, no audio, no interface at all */
     .block video {
       display: block;
       width: 800px;
       max-width: 100%;
       height: auto;
       background: #000;
-      filter: grayscale(100%);
-      object-fit: cover;
     }
 
-    /* Hide all video controls by default (no interface) */
+    /* Completely hide all video controls / UI */
     video::-webkit-media-controls {
       display: none !important;
     }
     video::-webkit-media-controls-enclosure {
       display: none !important;
     }
+    video::-webkit-media-controls-panel {
+      display: none !important;
+    }
+    video::-webkit-media-controls-overlay-play-button {
+      display: none !important;
+    }
     video {
-      pointer-events: none; /* makes it impossible to interact -> no interface */
+      pointer-events: none;
     }
 
     /* Mobile: hide sidebar nav, show header image above content */
@@ -229,7 +233,7 @@
       Wiggle and Panning shot at 20:30
     </div>
 
-    <!-- Videos (autoplay, loop, no audio, no interface, greyscale) -->
+    <!-- Videos (autoplay, loop, no audio, no interface whatsoever, original colors) -->
     <div class="block">
       <video autoplay loop muted playsinline disableRemotePlayback>
         <source src="rjfilter630amsmall2.mp4" type="video/mp4">
