@@ -5,6 +5,7 @@ document.getElementById('sidebar').innerHTML = `
   <nav>
     <a href="filter.html">Filter</a>
     <a href="aengstli.html">ÄNGSTLI</a>
+    <a href="dramaonline.html">Drama Online</a>
     <span class="empty-line">&nbsp;</span>
     <a href="about.html">About</a>
     <a href="newsletter.html">Newsletter</a>

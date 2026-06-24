@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drama Online – hjitp.ch</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+    }
+
+    /* Static vertical sidebar */
+    #sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 280px;
+      height: 100vh;
+      background: #fff;
+      z-index: 100;
+    }
+
+    #sidebar .header-image {
+      display: block;
+      width: 280px;
+    }
+
+    #sidebar .header-image img {
+      width: 280px;
+      display: block;
+    }
+
+    /* Nav links — indented 20px further than header image */
+    #sidebar nav {
+      padding-left: 20px;
+    }
+
+    #sidebar nav a,
+    #sidebar nav .empty-line {
+      display: block;
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      font-style: italic;
+      line-height: 1.5;
+      color: #000;
+      text-decoration: none;
+    }
+
+    #sidebar nav a:hover {
+      color: #0000EE;
+      text-decoration: underline;
+    }
+
+    /* Main content area */
+    #content {
+      margin-left: 280px;
+      padding-left: 20px;
+      padding-top: 20px;
+    }
+
+    /* Type Style 2: Arial, 14px, regular, line-height 1.1 */
+    .type2 {
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1.1;
+      color: #000;
+      max-width: 400px;
+    }
+
+    /* Spacing between paragraphs and images matches paragraph spacing */
+    .block {
+      margin-bottom: 1.1em;
+    }
+
+    /* Chapter links: always blue + underline */
+    .block a {
+      color: #0000EE;
+      text-decoration: underline;
+    }
+
+    .block a:hover {
+      color: #0000EE;
+      text-decoration: underline;
+    }
+
+    /* Images at their natural width */
+    .block img {
+      display: block;
+      width: 800px;
+      max-width: 100%;
+    }
+
+    /* Mobile: hide sidebar nav, show header image above content */
+    @media (max-width: 600px) {
+      #sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+
+      #sidebar .header-image img {
+        width: 280px;
+      }
+
+      #sidebar nav {
+        display: none;
+      }
+
+      #content {
+        margin-left: 0;
+        padding-left: 0;
+        padding-top: 20px;
+      }
+
+      .type2 {
+        max-width: 100%;
+        padding: 0 20px;
+      }
+
+      .block img {
+        width: 100vw;
+        max-width: 100vw;
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="sidebar"></div>
+
+  <script src="sidebar.js"></script>
+
+  <div id="content">
+
+    <!-- 1st Type-2-Paragraph -->
+    <div class="block type2">
+      Olivia Vidovic<br>
+      <i>Drama Online</i><br>
+      27.6. - 11.7.2026<br>
+      Auf dem Wolf 11, Basel
+    </div>
+
+    <!-- 2nd Type-2-Paragraph -->
+    <div class="block type2">
+      <i>Drama Online</i> will open Saturday 24.6. from 12 to 15. Due to the heat we will postpone a more formal opening reception, possibly to the weekend of the 4th of July. Meanwhile it is possible to see the exhibition on appointment.
+    </div>
+
+  </div>
+
+</body>
+</html>
