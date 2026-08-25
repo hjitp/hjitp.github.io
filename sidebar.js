@@ -3,6 +3,7 @@ document.getElementById('sidebar').innerHTML = `
     <img src="Header200pxbroad.jpg" alt="hjitp.ch">
   </a>
   <nav>
+    <a href="openstudiogroupshow.html">Open Studio Group Show</a>
     <a href="dramaonline.html">Drama Online</a>
     <a href="filter.html">Filter</a>
     <a href="aengstli.html">ÄNGSTLI</a>
